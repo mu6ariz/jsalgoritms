@@ -1,0 +1,26 @@
+      //?d?din faizini v? faizin? gör? ?d?di tapan funksiya düz?ldin.
+
+      function faizHesabla(eded, faiz) {
+
+
+            let result = (eded * faiz) / 100
+
+            console.log(`${eded} ededinin ${faiz} faizi ----> ${result} edir`);
+
+      }
+
+      faizHesabla(8, 50);
+
+
+
+      //faizin? gör? ?d?di tapan funksiya düz?ldin.
+      function faizineGore(eded, faiz) {
+
+
+            let result = (eded * 100) / faiz;
+
+            console.log(`${faiz} faizi ${eded} olan eded ----> ${result}`);
+
+      }
+
+      faizineGore(72, 18);

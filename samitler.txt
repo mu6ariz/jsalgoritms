@@ -1,0 +1,31 @@
+let ms = ["samir"];
+
+function escape(array){
+let vowels = ["a","i"];
+sum ="";
+for ( let f of ms){
+for (let j of f){
+if (!vowelEscape(j) ) {
+
+sum+=j;
+
+}
+}
+console.log(sum);
+}
+}
+
+
+function vowelEscape(sym){
+let vowels = ["a","i"];
+let _isvowel = false;
+for (v of vowels){
+if (sym == v){
+_isvowel = true;
+}
+}
+return _isvowel;
+}
+
+
+escape(ms);

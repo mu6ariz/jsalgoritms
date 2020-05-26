@@ -1,0 +1,28 @@
+//Ədədlərin ədədi ortasını tapan funksiya düzəldin
+
+      let ms = [678, 45, 67, 89, 23, 545, 188, 293]
+
+      function eorta(array) {
+
+            let edediorta = 0;
+            let sum = 0;
+            let count = 0;
+            for (i = 0; i < array.length; i++) {
+
+                  if (typeof array[i] == "number") {
+
+                        sum += array[i];
+
+                        ++count
+
+                  }
+
+                  edediorta = sum / count;
+
+            }
+
+            console.log(edediorta);
+
+      }
+
+      eorta(ms)

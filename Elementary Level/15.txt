@@ -1,0 +1,24 @@
+      let ms = [678, "Freelance", 45, 67, 89, "Raymond", 23, true, "Michael", "Joseph", 545, 188];
+
+      //Massivd?ki sözl?rin sayini tapin
+
+
+      function stringFinder(array) {
+
+            let count = 0;
+
+            for (let element of array) {
+
+                  if (typeof element == "string") {
+
+                        count++
+
+                  }
+
+            }
+
+            console.log(`Massivdeki sozler sayi   ${count}`);
+
+      }
+
+      stringFinder(ms);

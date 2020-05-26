@@ -1,0 +1,32 @@
+      //Massivdeki butun boyuk herfleri kicik, kicik herfleri boyukle evezleyin
+	
+	let names = ["Freelance", 45, 67, 89, "Raymond", 23, true, "Michael", "Joseph", 545, 188, 293];
+      let lowers = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+      let uppers = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+      let sum = "";
+      for (let f of names) {
+
+            if (typeof f == "string") {
+                  for (let letter of f) {
+                        for (let u = 0; u < uppers.length; u++) {
+
+                              if (letter == uppers[u]) {
+
+                                    letter = lowers[u]
+
+                              }
+
+                              else if (letter == lowers[u]) {
+
+                                    letter = uppers[u];
+
+                              }
+                        }
+                        sum += letter
+                  }
+                  sum += " ";
+            }
+
+      }
+
+      console.log(sum);

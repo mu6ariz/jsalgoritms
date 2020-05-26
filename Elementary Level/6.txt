@@ -1,0 +1,22 @@
+      let ms = [678, 45, 67, 89, 23, 545, 188, 293]
+
+      //Massivd?ki cüt ?d?dl?ri tapan funksiya düz?ldin
+
+
+      function countFinder(array) {
+
+            let sum = "";
+
+            for (let f of array) {
+
+                  if (f % 2 == 0)
+
+                        sum += f + ",   "
+
+            }
+
+            console.log(`Massivdeki cut ededler bunlardir ${sum}`);
+
+      }
+
+      countFinder(ms)

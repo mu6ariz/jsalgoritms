@@ -1,0 +1,12 @@
+//(8x+45)25-9 sad? düsturuna uygun funksiya düz?ldin. Funksiya x-i q?bul ed?r?k hesablama aparsin.
+
+function calculate(x){
+
+
+let result = (( (8 * x) + 45 ) / 25 ) - 9;
+
+console.log(result);
+
+}
+
+calculate(0)

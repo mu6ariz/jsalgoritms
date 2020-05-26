@@ -1,0 +1,34 @@
+//45,67,89,23,55,88 v? 93 r?q?mind?n ibar?t massivimiz var. ?stifad?çid?n h?r hans? bir r?q?m yazmas?n? t?l?b ed?r?k h?min r?q?min massivd? olub olmamas? yoxlay?n. ?g?r r?q?m ?d?d varsa “xx r?q?mi massivd? var” v? ya “xx r?q?mi massivd? yoxdur” ??klind? ekrana yaz? ç?xard?n
+
+let numbers = [45,67,89,23,55,88,93];
+
+function numberFinder(number){
+
+let isNumber = false;
+
+for (i = 0;i<numbers.length;i++){
+
+if (number == numbers[i]){
+
+isNumber = true;
+
+}
+
+}
+
+if (isNumber){
+
+console.log(`${number} reqemi massivde movcuddur`);
+
+}
+
+else {
+
+  console.log(`${number} reqemi massivde movcud deyil`);
+
+}
+
+}
+
+
+numberFinder(55)

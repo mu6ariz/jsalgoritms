@@ -1,0 +1,20 @@
+      //678,45,67,89,23,545,188 v? 293 r?q?ml?rind?n ibar?t massiv verilmi?dir. Hamisini topla
+
+      let ms = [678, 45, 67, 89, 23, 545, 188, 293]
+
+      function topla(array) {
+
+            let sum = 0;
+
+            for (let number of array) {
+
+                  sum += number;
+
+            }
+
+            console.log(sum);
+
+      }
+
+
+      topla(ms);

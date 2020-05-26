@@ -1,0 +1,50 @@
+//Massivdəki bütün böyük hərfləri kiçik, kiçik hərfləri böyük hərflə əvəzləyin
+
+      let ms = [678, "Freelance", [99, 21, [99, 12, 456, ["Simon", "Holly"], 78, 34], 45, 67], 45, 67, 89, "Raymond", 23, true, "Michael", "Joseph", 545, 188, 293];
+      let lowers = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+      let uppers = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+      let sum = "";
+      for (let element of ms) {
+            if (typeof element == "string") {
+                  for (let j of element) {
+                        for (let u = 0; u < lowers.length; u++) {
+                              if (j == lowers[u]) {
+                                    j = uppers[u];
+                              }
+                              else if (j == uppers[u]){
+                                j = lowers[u];
+                              }
+                        }
+                        sum +=j
+                  }
+                  sum+="  "
+            }
+            else if (typeof element == "object") {
+                        for (let objectElement of element) {
+                              if (typeof objectElement == "object") {
+                                    for (let k of objectElement) {
+                                          if (typeof k == "object") {
+                                                for (let elmnt of k) {
+                                                      if (typeof elmnt == "string") {
+                                                            for (let y of elmnt) {
+                                                                  for (let u = 0; u < lowers.length; u++) {
+                                                                        if (y == lowers[u]) {
+                                                                              y = uppers[u];
+                                                                        }
+                                                                        else if (y == uppers[u]){
+                                                                               y = lowers[u];
+                                                                        }
+                                                                  }
+                                                                  sum += y
+                                                            }
+                                                            sum+="  "
+                                                      }
+
+                                                }
+                                          }
+                                    }
+                              }
+                        }
+                  }
+      }
+      console.log(sum);

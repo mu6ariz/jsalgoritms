@@ -1,0 +1,37 @@
+//Massivdeki ededlerin ededi ortasini tapin
+
+      let ms = [678, "Freelance", [99, 21, [99, 12, 456, ["Simon", "Holly"], 78, 34], 45, 67], 45, 67, 89, "Raymond", 23, true, "Michael", "Joseph", 545, 188, 293]
+      let sum = 0;
+      let count = 0;
+
+      for (let element of ms) {
+
+            if (typeof element == "number") {
+
+                  sum += element
+                  count++
+            }
+            else if (typeof element == "object") {
+
+                  for (let objectElement of element) {
+
+                        if (typeof objectElement == "number") {
+
+                              sum += objectElement
+                              count++
+                        }
+                        else if (typeof objectElement == "object") {
+
+                              for (let element of objectElement) {
+
+                                    if (typeof element == "number") {
+
+                                          sum += element
+                                          count++
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+      console.log(sum / count);

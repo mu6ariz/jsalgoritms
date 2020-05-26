@@ -1,0 +1,27 @@
+//Massivdəki sözlərin hər birində iştirak edən saitləri tapın
+
+      let ms = ["Freelance", 45, 67, 89, "Raymond", 23, true, "Michael", "Joseph", 545, 188, 293];
+      let vowels = ["A", "I", "U", "O", "E", "a", "e", "i", "u", "o"];
+
+
+      for (let f of ms) {
+
+            if (typeof f == "string") {
+                  let sum = "";
+                  for (let j of f) {
+
+                        for (let v of vowels) {
+
+                              if (j == v) {
+
+                                    sum += j
+
+                              }
+
+                        }
+
+                  }
+                  console.log(f + " " + sum);
+            }
+
+      }

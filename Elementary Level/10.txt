@@ -1,0 +1,23 @@
+//Massivdəki ən kiçik ədədi tapan funksiya düzəldin
+
+      let nums = [4, 10, 50, 3];
+
+      function lowNumberFinder(array) {
+
+            let minimumNum = array[0];
+            for (let i = 0; i < array.length; i++) {
+
+
+
+                  if (array[i] < minimumNum) {
+
+                        minimumNum = array[i];
+
+                  }
+
+            }
+            console.log(minimumNum);
+
+      }
+
+      lowNumberFinder(nums);

@@ -1,0 +1,13 @@
+     //Istifad?çid?n r?q?m alaraq onu 2y? vurub ekranda göst?rin
+
+
+      function number(reqem) {
+
+
+            let rs = reqem * 2;
+
+            console.log(rs);
+
+      }
+
+      number(2);

@@ -1,0 +1,42 @@
+//Massivdəki sözlərin hərflərini 16liq say sistemində göstərin
+
+      let ms = [678, "Freelance", [99, 21, [99, 12, 456, ["Simon", "Holly"], 78, 34], 45, 67], 45, 67, 89, "Raymond", 23, true, "Michael", "Joseph", 545, 188, 293];
+      let ascii = [41, 42, 43, 44, 45, 46, 47, 48, 49, "4A", "4B", "4C", "4D", "4E", "4F", 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, "5A", 61, 62, 63, 64, 65, 66, 67, 68, 69, "6A", "6B", "6C", "6D", "6E", "6F", 70, 71, 72, 73, 74, 75, 76, 77, 78, 79]
+      let letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+      let sum = "";
+      for (let element of ms) {
+            if (typeof element == "string") {
+                  for (let j of element) {
+                        for (let u = 0; u < letters.length; u++) {
+                              if (j == letters[u]) {
+                                    j = ascii[u];
+                              }
+                        }
+                        sum += j
+                  }
+            }
+            else if (typeof element == "object") {
+                        for (let objectElement of element) {
+                              if (typeof objectElement == "object") {
+                                    for (let k of objectElement) {
+                                          if (typeof k == "object") {
+                                                for (let elmnt of k) {
+                                                      if (typeof elmnt == "string") {
+                                                            for (let y of elmnt) {
+                                                                  for (let u = 0; u < letters.length; u++) {
+                                                                        if (y == letters[u]) {
+                                                                              y = ascii[u];
+                                                                        }
+                                                                  }
+                                                                  sum += y
+                                                            }
+                                                      }
+
+                                                }
+                                          }
+                                    }
+                              }
+                        }
+                  }
+      }
+      console.log(sum);

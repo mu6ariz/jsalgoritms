@@ -1,0 +1,24 @@
+      let ms = [678, "Freelance", 45, 67, 89, "Raymond", 23, true, "Michael", "Joseph", 545, 188]
+
+      //Massivd?ki sözl?ri v? onlar?n h?rfl?ri say?n? göst?rin. Misal : Freelance – 9 h?rf
+
+
+      function stringFinder(array) {
+
+            let sum = "";
+
+            for (let element of array) {
+
+                  if (typeof element == "string") {
+
+                        sum += element + " " + element.length + "   "
+
+                  }
+
+            }
+
+            console.log(`Massivdeki sozler ve herflerinin sayi bunlardir   ${sum}`);
+
+      }
+
+      stringFinder(ms);

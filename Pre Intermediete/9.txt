@@ -1,0 +1,44 @@
+//Massivdəki sözlərin sayını tapın
+
+      let ms = [678, "Freelance", [99, 21, [99, 12, 456, ["Simon", "Holly"], 78, 34], 45, 67], 45, 67, 89, "Raymond", 23, true, "Michael", "Joseph", 545, 188, 293]
+      let count = 0;
+
+      for (let element of ms) {
+
+            if (typeof element == "string") {
+
+                  count++
+            }
+            else if (typeof element == "object") {
+
+                  for (let objectElement of element) {
+
+                        if (typeof objectElement == "string") {
+
+                              count++
+                        }
+                        else if (typeof objectElement == "object") {
+
+                              for (let element of objectElement) {
+
+                                    if (typeof element == "string") {
+
+                                          count++
+                                    }
+
+                                    else if (typeof element == "object") {
+
+                                          for (let objectElement of element) {
+
+                                                if (typeof objectElement == "string") {
+
+                                                      count++
+                                                }
+                                          }
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+      console.log(count);

@@ -1,0 +1,19 @@
+//Sözdə verilmiş indeksdən başlayaraq geriyə qalan bütün ifadəni qaytaran funksiya yazın. Misal Azerbaijan sözündə 3cü indeksdən başlayaraq qalan bütün hərfləri geri qaytaran funksiya.
+
+      function indexShower(array) {
+            let sum = "";
+
+            for (let f = 0; f < array.length; f++) {
+
+                  for (let j = 3; j < array[f].length; j++) {
+
+                        sum += array[f][j];
+
+                  }
+
+            }
+
+            console.log(sum);
+      }
+
+      indexShower(["Samir"])

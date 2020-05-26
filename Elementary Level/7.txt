@@ -1,0 +1,19 @@
+      let ms = [678, 45, 67, 89, 23, 545, 188, 293]
+
+      //Massivd?ki ?d?dl?rin say?n? tapan funksiya düz?ldin
+
+
+      function countFinder(array) {
+
+            let count = 0;
+
+            for (let f of array) {
+
+                  count++
+
+            }
+            console.log(count);
+
+      }
+
+      countFinder(ms)

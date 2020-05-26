@@ -1,0 +1,27 @@
+//ASCİİ cədvəlini istifadə edərək istifadəçidən onun adını 16liq say sistemində alın. Həmin adı oxunabilən –hərflər toplusu olaraq göstərin. Misal  İstifadəçi 547572616c daxil edir. 54 A
+
+      function ascii(num) {
+            let ascii = [41, 42, 43, 44, 45, 46, 47, 48, 49, "4A", "4B", "4C", "4D", "4E", "4F", 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, "5A", 61, 62, 63, 64, 65, 66, 67, 68, 69, "6A", "6B", "6C", "6D", "6E", "6F", 70, 71, 72, 73, 74, 75, 76, 77, 78, 79]
+            let letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+            let sum = "";
+            for (let f of num) {
+
+
+                  for (let u = 0; u < letters.length; u++) {
+
+                        if (f == ascii[u]) {
+
+                              f = letters[u];
+
+                        }
+                  }
+                  sum += f
+
+
+            }
+
+            console.log(sum);
+
+      }
+
+      ascii(["4D", 55, 42, 41, 52, 49, "5A"])

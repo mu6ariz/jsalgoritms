@@ -1,0 +1,22 @@
+      let ms = [678, 45, 67, 89, 23, 545, 188, 293]
+
+      //Massivd? 100d?n boyük 200d?n kiçik ?d?dl?rin  say?n? tapan funksiya düz?ldin
+
+
+      function countFinder(array) {
+
+            let count = 0;
+
+            for (let f of array) {
+
+                  if (f > 100 && f < 200)
+
+                        count++
+
+            }
+
+            console.log(count);
+
+      }
+
+      countFinder(ms)

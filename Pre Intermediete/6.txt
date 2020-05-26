@@ -1,0 +1,50 @@
+//Massivdəki sözləri və onların hərfləri sayını göstərin. Misal  Freelance – 9 hərf
+
+
+      let ms = [678, "Freelance", [99, 21, [99, 12, 456, ["Simon", "Holly"], 78, 34], 45, 67], 45, 67, 89, "Raymond", 23, true, "Michael", "Joseph", 545, 188, 293]
+      let sum = "";
+
+      for (let element of ms) {
+
+            if (typeof element == "string") {
+
+                  sum += element + "----->" + element.length + "  "
+            }
+            else if (typeof element == "object") {
+
+                  for (let objectElement of element) {
+
+                        if (typeof objectElement == "string") {
+
+                              sum += element + "----->" + element.length + "  "
+                        }
+                        else if (typeof objectElement == "object") {
+
+                              for (let element of objectElement) {
+
+                                    if (typeof element == "string") {
+
+                                          sum += element + "----->" + element.length + "  "
+                                    }
+
+
+                                    else if (typeof element == "object") {
+
+                                          for (let objectElement of element) {
+
+                                                if (typeof objectElement == "string") {
+
+                                                      sum += element + "----->" + element.length + "  "
+                                                      break;
+                                                }
+
+                                          }
+
+                                    }
+
+                              }
+                        }
+                  }
+            }
+      }
+      console.log(sum);

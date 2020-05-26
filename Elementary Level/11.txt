@@ -1,0 +1,22 @@
+//Massivdəki sözləri tərsinə yazın
+
+      let ms = [678, "Freelance", 45, 67, 89, "Raymond", 23, true, "Michael", "Joseph", 545, 188];
+
+      function reverse(array) {
+
+            for (let f of array) {
+
+                  if (typeof f == "string") {
+                        let rvs = "";
+
+                        for (let i = f.length - 1; i > -1; i--) {
+                              rvs += f[i];
+
+                        }
+                        console.log(rvs);
+
+                  }
+            }
+      }
+
+      reverse(ms);

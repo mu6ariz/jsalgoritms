@@ -1,0 +1,12 @@
+      function cube(number, power) {
+            let rs = 1;
+
+            for (i = 0; i < power; i++) {
+
+                  rs *= number;
+
+            }
+            console.log(rs);
+      }
+
+      cube(5, 3);

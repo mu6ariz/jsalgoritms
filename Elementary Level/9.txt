@@ -1,0 +1,29 @@
+//Massivdəki ən böyük ilə ən kiçik ədədin fərqini tapan funksiya düzəldin
+
+      let nums = [4, 10, 50, 3];
+
+      function MaxMin(array) {
+
+            let maxNum = array[0];
+            let minNum = array[0];
+            for (let i = 0; i < array.length; i++) {
+
+                  if (array[i] > maxNum) {
+
+                        maxNum = array[i];
+
+                  }
+
+                  else if (array[i] < minNum) {
+
+                        minNum = array[i]
+
+
+                  }
+
+            }
+            console.log(maxNum - minNum);
+
+      }
+
+      MaxMin(nums);

@@ -1,0 +1,26 @@
+//Üçbucağın 2 bucağının qiymətini istifadəçidən alın. İstifadəçinin yazdığı dəyər üçbucağın bucaqları cəmindən böyük olarsa ozaman istifadəçidən yenidən dəyər daxil etməsini tələb e      
+
+
+	function bucaqFinder(bucaq1, bucaq2) {
+            let isFound = false;
+
+            let result = 180 - (bucaq1 + bucaq2)
+            isFound = true;
+
+            if (bucaq1 > result && bucaq2 > result) {
+                  isFound = false;
+            }
+
+            if (isFound) {
+
+                  console.log("Ucbucagin 3-cu bucagi " + result);
+
+            }
+
+            else {
+                  console.log("Yeniden deyeri daxil edin")
+            }
+
+      }
+
+      bucaqFinder(50, 75)

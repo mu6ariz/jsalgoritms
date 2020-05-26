@@ -1,0 +1,23 @@
+//Massivdəki ən böyük ədədi tapan funksiya düzəldin
+
+      let nums = [4, 10, 50, 3];
+
+      function maxNumberFinder(array) {
+
+            let maxNum = array[0];
+            for (let i = 0; i < array.length; i++) {
+
+
+
+                  if (array[i] > maxNum) {
+
+                        maxNum = array[i];
+
+                  }
+
+            }
+            console.log(maxNum);
+
+      }
+
+      maxNumberFinder(nums);

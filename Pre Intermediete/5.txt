@@ -1,0 +1,36 @@
+//Massivdəki sözləri tərsinə yazın
+
+      let ms = [678, "Freelance", [99, 21, [99, 12, 456, ["Simon", "Holly"], 78, 34], 45, 67], 45, 67, 89, "Raymond", 23, true, "Michael", "Joseph", 545, 188, 293];
+      let sum = "";
+      for (let element of ms) {
+            if (typeof element == "string") {
+                  for (let j = element.length-1 ; j >-1;j--) {
+                      sum+=element[j];
+                  }
+                  sum+=" "
+            }
+            else if (typeof element == "object") {
+                        for (let objectElement of element) {
+                              if (typeof objectElement == "object") {
+                                    for (let k of objectElement) {
+                                          if (typeof k == "object") {
+                                                for (let elmnt of k) {
+                                                      if (typeof elmnt == "string") {
+                                                            
+                                                                  for (let j = element.length-1;j>-1;j--){
+
+                                                                        sum+=elmnt[j];
+
+                                                                  }
+                                                                  
+                                                            sum+= " "
+                                                      }
+
+                                                }
+                                          }
+                                    }
+                              }
+                        }
+                  }
+      }
+      console.log(sum);

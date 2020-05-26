@@ -1,0 +1,29 @@
+      //6)	Istifad?çid?n 2 r?q?m v? hesablama simvolu alin. ?g?r hesablama simvolu * olarsa vurma, . olarsa bolm?, - olarsa çixma v? + olarsa toplama ?m?liyyati yerin? yetirilsin. Tapsirigi h?m if..else h?m d? switch..case il? yerin? yetirin
+
+
+      function calculate(num1, num2, sym) {
+
+            if (sym == "*") {
+
+                  let rs = num1 * num2;
+
+                  console.log(rs);
+            }
+
+            else if (sym == "+") {
+
+                  let rs = num1 + num2;
+
+                  console.log(rs);
+            }
+
+            else if (sym == "/") {
+
+                  let rs = num1 / num2;
+
+                  console.log(rs);
+            }
+
+      }
+
+      calculate(5, 6, "+");

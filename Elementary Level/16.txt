@@ -1,0 +1,33 @@
+//Sözdə hansısa bir frazanın olub olmadığı tapan funksiya yazın. Misal Azerbaijan sözündə “bai” və ya “akame” frazasının olub olmadığını yoxlayın.
+
+function checkPhrase(word, phrase) {
+
+            let isFound = false;
+
+            for (let wordIndex = 0; wordIndex < word.length; wordIndex++) {
+
+                  for (let phraseIndex = 0; phraseIndex < phrase.length; phraseIndex++) {
+
+                        if (word[wordIndex] == phrase[phraseIndex]) {
+
+                              wordIndex++;
+                              if (phraseIndex == phrase.length - 1) {
+                                    isFound = true;
+                                    break;
+                              }
+                        }
+                        else {
+                              break;
+                        }
+
+                  }
+            }
+            if (isFound) {
+                  console.log("sizin axtardiginiz fraza sozde movcuddur");
+
+            }
+            else {
+                  console.log("sizin axtardiniz fraza sozde movcud deyildir");
+            }
+      }
+      checkPhrase("azerbaycan", "can");

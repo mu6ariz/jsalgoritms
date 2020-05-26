@@ -1,0 +1,14 @@
+      //Istifad?çid?n onun adini, soyadini v? yasini sorusun. Alinan m?lumatlari ekranda “M?nim adim xxxx, soyadim xxxx, yasim is? xxx-dir” s?klind? göst?rin
+
+
+      function ask(name, lastname, age) {
+
+            // let name;
+            // let lastname;
+            // let age;
+
+            console.log(`Salam menim adim ${name} Soyadim ise ${lastname} -dir. Yasim ${age}`);
+
+      }
+
+      ask("mubariz", "zulfiqarov", 20);

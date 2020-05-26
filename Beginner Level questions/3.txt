@@ -1,0 +1,12 @@
+// Düzbucaqlı fiqurumuz var. İstifadəçidən düzbucaqlının eni və uzunluğunu alaraq onun perimetr və sahəsini hesablayan proqram yazın
+      function areaWidth(en, uzunluq) {
+
+            let sahe = en * uzunluq
+
+            let perimetr = 2 * (en + uzunluq);
+
+            console.log(`Duzbucaqlinin sahesi ${sahe} perimetri ise ${perimetr} - edir`)
+
+      }
+
+      areaWidth(5, 4);
